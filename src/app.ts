@@ -1,4 +1,5 @@
 import {app} from './index'
+import './db/connect'
 
 const PORT = process.env.PORT
 
