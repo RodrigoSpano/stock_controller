@@ -19,6 +19,10 @@ const EmployeSchema = new mongoose.Schema<TEmployeBase>({
     type: String,
     required: true
   },
+  area: {
+    type: String,
+    required:true
+  },
   gender: {
     type: String,
     required: true
