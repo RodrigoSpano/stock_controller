@@ -35,13 +35,18 @@ export default class EmployeModel {
     else return []
   }
 
+  static async createEmploye(data: EmployeBase): Promise<EmployeBase>{
+    const newEmploye: EmployeBase = await employeModel.create(data)
+    return newEmploye
+  }
+
   static async updateEmploye({id, data}: {id: string, data: {age: number} | {position: string} }){
     const updateEmploye = await employeModel.findByIdAndUpdate(id, {data}, {new: true})
     await updateEmploye?.save()
     return updateEmploye
   }
 
-  static async removeOneEmploye({id}:{id: string}){
+  static async removeEmployeById({id}:{id: string}){
     await employeModel.deleteOne({id})
   }
 

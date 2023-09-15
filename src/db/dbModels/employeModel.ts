@@ -33,4 +33,4 @@ const EmployeSchema = new mongoose.Schema<EmployeBase>({
   }
 })
 
-export default mongoose.model('employe', EmployeSchema)
+export default mongoose.model<EmployeBase>('employe', EmployeSchema)
