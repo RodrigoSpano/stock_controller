@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import { EmployeBase } from "../../utils/interfaces/employes.interface";
+import { TEmployeBase } from "../../utils/types/employes.interface";
 
-const EmployeSchema = new mongoose.Schema<EmployeBase>({
+const EmployeSchema = new mongoose.Schema<TEmployeBase>({
   name: {
     type: String,
     required: true
@@ -19,6 +19,10 @@ const EmployeSchema = new mongoose.Schema<EmployeBase>({
     type: String,
     required: true
   },
+  area: {
+    type: String,
+    required:true
+  },
   gender: {
     type: String,
     required: true
@@ -33,4 +37,4 @@ const EmployeSchema = new mongoose.Schema<EmployeBase>({
   }
 })
 
-export default mongoose.model('employe', EmployeSchema)
+export default mongoose.model<TEmployeBase>('employe', EmployeSchema)

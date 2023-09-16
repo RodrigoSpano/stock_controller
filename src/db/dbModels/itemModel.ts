@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { ItemBase } from "../../utils/interfaces/items.interface";
+import { ItemBase } from "../../utils/types/items.interface";
 
 const ItemSchema = new mongoose.Schema<ItemBase>({
   name: {
