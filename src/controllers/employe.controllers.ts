@@ -44,7 +44,7 @@ export default class EmployeControllers {
   }
 
   async filterByProps(req: Request, res: Response){
-    const {type, value} = req.query
+    const {type, value} = req.body
     try { //! fix querys types error
       if(!type || !value) return res.status(400).json({message: 'bad request'})
       const filteredEmployes = await this.model.filterByProp({type,value})
