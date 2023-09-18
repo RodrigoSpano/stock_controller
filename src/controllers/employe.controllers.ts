@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 import EmployeModel from '../models/employesModel'
-import { TEmployeBase, TFilterParams } from '../utils/types/employes.interface'
+import { TEmployeBase, TFilterParams } from '../utils/types/employes'
 
 export default class EmployeControllers {
    protected model: EmployeModel = new EmployeModel()

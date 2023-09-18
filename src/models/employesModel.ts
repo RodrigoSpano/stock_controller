@@ -1,5 +1,5 @@
 import employeModel from "../db/dbModels/employeModel";
-import { IModelClass, TEmployeBase, TFilterParams, TUpdateEmployeParams } from "../utils/types/employes.interface";
+import { IModelClass, TEmployeBase, TFilterParams, TUpdateEmployeParams } from "../utils/types/employes";
 
 
 

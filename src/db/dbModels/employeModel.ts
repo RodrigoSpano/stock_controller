@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { TEmployeBase } from "../../utils/types/employes.interface";
+import { TEmployeBase } from "../../utils/types/employes";
 
 const EmployeSchema = new mongoose.Schema<TEmployeBase>({
   name: {
