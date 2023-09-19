@@ -1,4 +1,4 @@
-import { TEmployeBase } from "../types/employes.interface";
+import { TEmployeBase } from "../types/employes";
 
 export const employeMockup: TEmployeBase = {
   age: 23,

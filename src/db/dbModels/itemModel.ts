@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
-import { ItemBase } from "../../utils/types/items.interface";
+import { TitemBase } from "../../utils/types/items";
 
-const ItemSchema = new mongoose.Schema<ItemBase>({
+const ItemSchema = new mongoose.Schema<TitemBase>({
   name: {
     type: String,
     required: true,
